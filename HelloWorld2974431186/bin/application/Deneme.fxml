@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="917.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DenemeController">
+   <children>
+      <FlowPane layoutX="407.0" layoutY="305.0" prefHeight="917.0" prefWidth="942.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="vbox" prefHeight="78.0" prefWidth="100.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="CheckBox" />
+                  <CheckBox mnemonicParsing="false" text="CheckBox" />
+                  <Separator prefWidth="200.0" />
+                  <CheckBox mnemonicParsing="false" text="CheckBox" />
+                  <CheckBox mnemonicParsing="false" text="CheckBox" />
+                  <CheckBox mnemonicParsing="false" text="CheckBox" />
+                  <CheckBox mnemonicParsing="false" text="CheckBox" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TreeView prefHeight="200.0" prefWidth="200.0" />
+                  <Button fx:id="buttonFormAc" mnemonicParsing="false" onAction="#buttonFormAc_OnAction" text="Form ac" />
+                  <Label fx:id="label1" text="deneme labeli" />
+                  <Button fx:id="button" mnemonicParsing="false" text="Button" />
+                  <ComboBox fx:id="emailComboBox" prefWidth="150.0" />
+                  <ComboBox fx:id="priorityComboBox" prefWidth="150.0" />
+                  <TextField fx:id="subject" />
+                  <TextArea fx:id="text" prefHeight="200.0" prefWidth="200.0" />
+                  <Label fx:id="notification" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="68.0" prefWidth="150.0">
+               <children>
+                  <ComboBox fx:id="comboBox1" prefWidth="150.0" promptText="comboBox1" />
+                  <TextField fx:id="textField1" />
+                  <Button fx:id="buttonEkle" mnemonicParsing="false" onAction="#buttonEkle_OnClick" text="Ekle" />
+                  <Label text="TextFieldda yazani combobox sonuna ekler" wrapText="true" />
+               </children>
+            </VBox>
+            <VBox prefHeight="105.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="cappucino" fitHeight="150.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label text="Ölçeklendirme" />
+                  <Slider fx:id="scaling" prefHeight="18.0" prefWidth="212.0" />
+                  <Label fx:id="scalingValue" text="Ölçeklendirme" />
+               </children>
+            </VBox>
+            <VBox prefHeight="246.0" prefWidth="162.0">
+               <children>
+                  <Label prefHeight="78.0" prefWidth="162.0" text="ListView icindekini ekrana yazdırır" wrapText="true" />
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" text="Button" />
+               </children>
+            </VBox>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

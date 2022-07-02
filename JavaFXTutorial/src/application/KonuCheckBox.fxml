@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KonuCheckBoxController">
+	<children>
+      <ColorPicker fx:id="colorPicker" layoutX="402.0" layoutY="163.0" onAction="#colorPicker_OnAction" />
+		<!-- imageview nasıl eklenir -->
+		<ImageView fx:id="imageView1" fitHeight="187.0" fitWidth="263.0" layoutX="139.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@myicon.png" />
+			</image>
+		</ImageView>	
+		<Label fx:id="label1" layoutX="199.0" layoutY="263.0" text="label1" />
+		<CheckBox fx:id="checkBox1" layoutX="148.0" layoutY="344.0" mnemonicParsing="false" onAction="#checkBox1_OnAction" text="CheckBoXx" />
+      <Label fx:id="label2" layoutX="255.0" layoutY="284.0" text="label2" />
+      <!-- radiobutton nasıl kullanılır  -->
+      <RadioButton fx:id="radioButton1" layoutX="42.0" layoutY="409.0" mnemonicParsing="false" onAction="#yemekSec" text="pizza">
+         <toggleGroup>
+            <ToggleGroup fx:id="yemek" />
+         </toggleGroup>
+		</RadioButton>
+		<RadioButton fx:id="radioButton2" layoutX="169.0" layoutY="398.0" mnemonicParsing="false" onAction="#yemekSec" text="Wow" toggleGroup="$yemek" />
+		<RadioButton fx:id="radioButton3" layoutX="295.0" layoutY="398.0" mnemonicParsing="false" onAction="#yemekSec" text="AAAAA" toggleGroup="$yemek" />
+      <DatePicker fx:id="datePicker" layoutX="141.0" layoutY="447.0" onAction="#datePicker_onAction" />
+      <Label fx:id="label3" layoutX="219.0" layoutY="506.0" text="label3" />
+      <ChoiceBox fx:id="choiceBox1" layoutX="403.0" layoutY="527.0" prefWidth="150.0" />
+      <Label fx:id="label4" layoutX="403.0" layoutY="565.0" text="label1" />
+      <Slider fx:id="slider1" layoutX="571.0" layoutY="206.0" majorTickUnit="10.0" min="-10.0" minorTickCount="10" orientation="VERTICAL" prefHeight="241.0" prefWidth="48.0" showTickLabels="true" showTickMarks="true" value="20.0" />
+      <Label fx:id="label5" layoutX="486.0" layoutY="409.0" text="Label" />
+      <Label fx:id="label6" layoutX="446.0" layoutY="33.0" text="label6" />
+     <ProgressBar fx:id="progressBar" layoutX="378.0" layoutY="71.0" prefWidth="200.0" progress="0.0" />
+     
+     <Button layoutX="446.0" layoutY="104.0" mnemonicParsing="false" onAction="#button1_OnAction" text="Button" />
+      <VBox layoutX="687.0" layoutY="19.0" prefHeight="320.0" prefWidth="151.0">
+         <children>
+            <TreeView fx:id="treeView1" onContextMenuRequested="#treeViewSec" onMouseClicked="#treeViewSec" prefHeight="224.0" prefWidth="175.0" />
+         </children>
+      </VBox>
+     
+      				
+		
+		
+      
+      
+      
+		
+		
+		
+		<!--  -->
+	</children>
+</AnchorPane>

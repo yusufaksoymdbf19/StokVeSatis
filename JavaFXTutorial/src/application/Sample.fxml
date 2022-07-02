@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Text fx:id="text" layoutX="85.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Line fx:id="line" endX="100.0" layoutX="139.0" layoutY="85.0" startX="-100.0" />
+      <Rectangle fx:id="dikdortgenim" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="200.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Polygon fx:id="ucgen" fill="DODGERBLUE" layoutX="139.0" layoutY="401.0" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Circle fx:id="cember" fill="DODGERBLUE" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="resimim" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

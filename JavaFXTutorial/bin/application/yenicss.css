@@ -1,0 +1,28 @@
+/*Label sýnýfýnýn tüm nesnelerini kapsayan css komutu nasýl yazýlýr? */
+.label{
+	/*tum labellarýn fontu 30 nasýl yapýlýr? */
+	-fx-font-size: 30;
+	/*tum labellarýn yazý tipi lucida console nasýl yapýlýr? */
+	-fx-font-family: "Lucida Console";
+	/*tum labellarýn rengini beyaz yap */
+	-fx-text-fill: "red";
+	
+	/*tum labellarý ortaya hizalama nasýl yapýlýr */
+	-fx-alignment: center;
+	/* ve prefwidti tam ekran genisliginde yaparsan belli olur. */
+
+}
+/*root sýnýfýnýn tüm nesnelerini kapsayan css komutu yaz.*/
+.root{
+	/*arkaplan rengini 00FF00 YAP */
+	/*-fx-background-color: #00FF00;*/
+	
+	/*arkaplan rengini siyah yap 
+	 * -fx-background-color: "black" */
+	 
+	
+}
+/*sadece idsi label2 olanýn yazý tipi boyutunu 50 yap.  */
+#label2{
+	-fx-font-size: 50;	
+}

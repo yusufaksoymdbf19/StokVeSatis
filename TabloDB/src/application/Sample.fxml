@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.SampleController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="134.0" layoutY="112.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableView1" onMouseClicked="#tableView1_OnMouseClicked" prefHeight="245.0" prefWidth="498.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="columnId" prefWidth="75.0" text="id" />
+                      <TableColumn fx:id="columnKul_Ad" prefWidth="75.0" text="kul_ad" />
+                        <TableColumn fx:id="columnSifre" prefWidth="75.0" text="sifre" />
+                        <TableColumn fx:id="columnYetki" prefWidth="75.0" text="yetki" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="32.0" layoutY="14.0" text="id" />
+                  <Label layoutX="32.0" layoutY="56.0" text="kul adi" />
+                  <Label layoutX="32.0" layoutY="91.0" text="Sifre" />
+                  <Label layoutX="32.0" layoutY="123.0" text="Yetki" />
+                  <Label fx:id="labelId" layoutX="87.0" layoutY="14.0" text="Label" />
+                  <Label fx:id="labelYetki" layoutX="97.0" layoutY="123.0" text="Label" />
+                  <TextField fx:id="textFieldKulAdi" layoutX="90.0" layoutY="51.0" />
+                  <TextField fx:id="textFieldSifre" layoutX="90.0" layoutY="86.0" />
+                  <Button fx:id="buttonRefresh" layoutX="389.0" layoutY="164.0" mnemonicParsing="false" onAction="#buttonRefresh_OnAction" text="Refresh" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

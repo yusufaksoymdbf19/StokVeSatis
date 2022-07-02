@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1266.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="button1" layoutX="250.0" layoutY="141.0" mnemonicParsing="false" onAction="#button1_OnAction" prefHeight="84.0" prefWidth="212.0" text="ekle listeye">
+         <graphic>
+            <ImageView fitHeight="74.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@R.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ListView fx:id="listView1" layoutX="286.0" layoutY="250.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="button2" layoutX="286.0" layoutY="455.0" mnemonicParsing="false" onAction="#button2_OnAction" prefHeight="31.0" prefWidth="87.0" text="Secilenleri Bas" />
+      <BorderPane prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="500.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button lineSpacing="3.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="168.0" text="Button" />
+                  <Button mnemonicParsing="false" prefHeight="119.0" prefWidth="168.0" text="Button" />
+                  <Button mnemonicParsing="false" prefHeight="102.0" prefWidth="168.0" text="Button" />
+                  <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="158.0" text="Button">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <HBox prefHeight="505.0" prefWidth="159.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="label1" text="Label" />
+                  <TextField fx:id="textField1" />
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" text="untitled 2">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="untitled 3">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Unspecified Menu">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Sample2Controller">
+   <children>
+      <Button fx:id="ust" layoutX="251.0" layoutY="26.0" mnemonicParsing="false" onAction="#ust_OnAction" text="Üst" />
+      <Button fx:id="sol" layoutX="26.0" layoutY="169.0" mnemonicParsing="false" onAction="#sol_OnAction" text="Sol" />
+      <Button fx:id="sag" layoutX="493.0" layoutY="169.0" mnemonicParsing="false" onAction="#sag_OnAction" text="Sağ" />
+      <Button fx:id="alt" layoutX="251.0" layoutY="338.0" mnemonicParsing="false" onAction="#alt_OnAction" text="Alt" />
+      <Circle fx:id="cember" fill="DODGERBLUE" layoutX="290.0" layoutY="210.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="label1" layoutX="6.0" layoutY="57.0" prefHeight="21.0" prefWidth="593.0" text="Level 1" />
+      <Label fx:id="label2" layoutX="2.0" layoutY="300.0" prefHeight="21.0" prefWidth="600.0" text="This is a some css styling" />
+      <Button fx:id="buttonPencereAc" text="Pencere Aç" onAction="#buttonPencereAc_OnAction" layoutX="441.0" layoutY="306.0" mnemonicParsing="false" />
+      <Label fx:id="labelIsim" text="Merhaba" />
+       
+   </children>
+</AnchorPane>
