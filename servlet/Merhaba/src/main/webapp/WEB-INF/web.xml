@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<servlet>
+	<servlet-name>Reena</servlet-name>
+	<servlet-class>com.yusuf.Reena</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Reena</servlet-name>
+	<url-pattern>/Reena</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>_29072022_1Servlet</servlet-name>
+	<servlet-class>com.yusuf._29072022_1Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>_29072022_1Servlet</servlet-name>
+	<url-pattern>/_29072022_1Servlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Ornek290720221645Servlet</servlet-name>
+	<servlet-class>com.yusuf.Ornek290720221645Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Ornek290720221645Servlet</servlet-name>
+	<url-pattern>/Ornek290720221645Servlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Ornek290720221608Servlet</servlet-name>
+	<servlet-class>com.yusuf.Ornek290720221608Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Ornek290720221608Servlet</servlet-name>
+	<url-pattern>/Ornek290720221608Servlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Deneme5Servlet</servlet-name>
+	<servlet-class>com.yusuf.Deneme5Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Deneme5Servlet</servlet-name>
+	<url-pattern>/Deneme5Servlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Ornek4Servlet</servlet-name>
+	<servlet-class>com.yusuf.Ornek4Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Ornek4Servlet</servlet-name>
+	<url-pattern>/Ornek4Servlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Ornek3Servlet</servlet-name>
+	<servlet-class>com.yusuf.Ornek3Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Ornek3Servlet</servlet-name>
+	<url-pattern>/Ornek3Servlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Ornek1</servlet-name>
+	<servlet-class>com.yusuf.Ornek1</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Ornek1</servlet-name>
+	<url-pattern>/Ornek1</url-pattern>
+</servlet-mapping>
+ <servlet>
+ 	<servlet-name>SecilenDersServlet</servlet-name>
+ 	<servlet-class>com.yusuf.SecilenDersServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>SecilenDersServlet</servlet-name>
+ 	<url-pattern>/SecilenDersServlet</url-pattern>
+ </servlet-mapping>
+ 	<servlet>
+ 		<servlet-name>abc</servlet-name>
+ 		<servlet-class>com.yusuf.Topla</servlet-class>
+ 	</servlet>
+ 	
+ 	<servlet-mapping>
+ 		<servlet-name>abc</servlet-name>
+ 		<url-pattern>/add</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	
+ 	<servlet>
+   <servlet-name>MyServlet</servlet-name>
+   <servlet-class>com.yusuf.MyServlet</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>MyServlet</servlet-name>
+   <url-pattern>/MyServlet</url-pattern>
+</servlet-mapping>
+
+<servlet> 
+	<servlet-name>Servletismi2</servlet-name>
+	<servlet-class>com.yusuf.Ornek2</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Servletismi2</servlet-name>
+	<url-pattern>/Servletismi2</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>AdSoyad</servlet-name>
+	<servlet-class>com.yusuf.AdSoyad</servlet-class>
+</servlet>
+	<servlet-mapping>
+		<servlet-name>AdSoyad</servlet-name>
+		<url-pattern>/AdSoyad</url-pattern>
+	</servlet-mapping>
+<servlet>
+	<servlet-name>Dersler</servlet-name>
+	<servlet-class>com.yusuf.Dersler</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Dersler</servlet-name>
+	<url-pattern>/Dersler</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Topla806</servlet-name>
+	<servlet-class>com.yusuf.Topla806</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Topla806</servlet-name>
+	<url-pattern>/Topla806</url-pattern>
+</servlet-mapping>
+</web-app>
+
+
+<!-- burayı ayarladıktan sonra f5 bas. -->
