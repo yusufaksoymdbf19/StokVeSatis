@@ -8,6 +8,4 @@ public interface DALInterfaces<T>{
 	public T delete(T entity);
 	public void update(T entity);
 	public List<T> getById(int id);
-	
-	
 }
