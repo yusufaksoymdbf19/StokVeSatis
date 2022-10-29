@@ -23,6 +23,4 @@ public class UrunlerDAL<UrunlerContract> extends ObjectHelper implements DALInte
 	public List<UrunlerContract> getById(int id){
 		return null;
 	}
-	
-	
 }
