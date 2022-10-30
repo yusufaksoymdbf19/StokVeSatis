@@ -10,6 +10,13 @@ public class AnaPencereFE extends JFrame implements FeInterfaces {
 	}
 	@Override
 	public void initPencere() {
+		JTabbedPane jTappedPane = new JTabbedPane();
+		JMenuBar jMenuBar = new JMenuBar();
+		setTitle("Satýþ ve Stok Programý");
+		pack();
+		setVisible(true);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 	}
 	@Override
