@@ -1,6 +1,6 @@
 package tr.com.yusuf.types;
 
-public class Yetkiler {
+public class YetkilerContract {
 	private int id;
 	private String adi;
 	public int getId() {
