@@ -1,5 +1,6 @@
 package tr.com.yusuf.fe;
 import javax.swing.JFrame;
+import javax.swing.JMenu;
 import javax.swing.JPanel;
 import javax.swing.JMenuBar;
 import javax.swing.JTabbedPane;
@@ -10,8 +11,10 @@ public class AnaPencereFE extends JFrame implements FeInterfaces {
 	}
 	@Override
 	public void initPencere() {
-		JTabbedPane jTappedPane = new JTabbedPane();
-		JMenuBar jMenuBar = new JMenuBar();
+		JTabbedPane tabs = new JTabbedPane();
+		JMenuBar bar = new JMenuBar();
+		//add(tabs);
+		setJMenuBar(bar);//
 		setTitle("Satýþ ve Stok Programý");
 		pack();
 		setVisible(true);
@@ -25,7 +28,10 @@ public class AnaPencereFE extends JFrame implements FeInterfaces {
 	}
 	@Override
 	public JMenuBar initBar() {
-		return null;
+		JMenuBar bar = new JMenuBar();
+		JMenu dosyaMenu = new JMenu("Dosya");
+		bar.add(dosyaMenu);
+		return bar;
 	}
 	@Override
 	public JTabbedPane initTabs() {
