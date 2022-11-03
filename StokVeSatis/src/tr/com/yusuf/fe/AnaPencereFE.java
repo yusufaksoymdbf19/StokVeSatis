@@ -1,5 +1,6 @@
 package tr.com.yusuf.fe;
 import javax.swing.JFrame;
+import tr.com.yusuf.utilities.MenulerCom;
 import javax.swing.JMenuItem;
 import javax.swing.JMenu;
 import javax.swing.JPanel;
@@ -12,12 +13,13 @@ public class AnaPencereFE extends JFrame implements FeInterfaces {
 	}
 	@Override
 	public void initPencere() {
-		JTabbedPane tabs = new JTabbedPane();
+		//JTabbedPane tabs = new JTabbedPane();
 		JMenuBar bar = initBar();
 		//add(tabs);
 		setJMenuBar(bar);//
 		setTitle("Satýþ ve Stok Programý");
-		pack();
+		//pack();
+		setSize(600,250);
 		setVisible(true);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -30,26 +32,7 @@ public class AnaPencereFE extends JFrame implements FeInterfaces {
 	}
 	@Override
 	public JMenuBar initBar() {
-		JMenuBar bar = new JMenuBar();
-		JMenu dosyaMenu = new JMenu("Dosya");
-		bar.add(dosyaMenu);
-		JMenuItem jMenuItemCikis = new JMenuItem("Çýkýþ");
-		dosyaMenu.add(jMenuItemCikis);
-		JMenu urunlerMenu = new JMenu("Ürünler");
-		bar.add(urunlerMenu);
-		JMenuItem urunEkleItem = new JMenuItem("Ürün Ekle");
-		urunlerMenu.add(urunEkleItem);
-		JMenuItem kategoriEkleItem = new JMenuItem("Kategori Ekle");
-		urunlerMenu.add(kategoriEkleItem);
-		urunlerMenu.addSeparator();
-		JMenuItem urunDuzenleItem = new JMenuItem("Ürün düzenle");
-		urunlerMenu.add(urunDuzenleItem);
-		JMenuItem kategoriDuzenleItem = new JMenuItem("Kategori Düzenle");
-		urunlerMenu.add(kategoriDuzenleItem);
-		
-		
-		
-		
+		JMenuBar bar = MenulerCom.initBar();
 		return bar;
 	}
 	@Override
