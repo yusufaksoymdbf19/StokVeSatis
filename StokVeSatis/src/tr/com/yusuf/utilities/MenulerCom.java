@@ -2,6 +2,8 @@ package tr.com.yusuf.utilities;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.SwingUtilities;
+import tr.com.yusuf.fe.UrunEkleFE;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class MenulerCom {
@@ -25,7 +27,12 @@ public class MenulerCom {
 		urunEkleItem.addActionListener((ActionListener) new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("deneme"); ///
+				SwingUtilities.invokeLater(new Runnable() {
+					@Override
+					public void run() {
+						new UrunEkleFE();
+					}
+				});
 			}
 		});
 		
